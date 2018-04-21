@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next"
+  },
+  "dependencies": {
+    "babel-plugin-transform-assets": "^0.2.0",
+    "next": "latest",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  }
+}
