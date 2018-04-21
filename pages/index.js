@@ -15,5 +15,24 @@ export default () => (
     <img src={logoPNG} alt='Logo PNG' width='305' />
     <br />
     <strong>{logoPNG}</strong>
+		<div className='hello'>
+			<p>Hello World</p>
+		</div>
+    <style jsx>{`
+      .hello {
+        font: 15px Helvetica, Arial, sans-serif;
+        background: #eee;
+        padding: 100px;
+        text-align: center;
+        transition: 100ms ease-in background;
+        lost-column: 1/3;
+        &:hover {
+          color: red;
+        }
+      }
+      .hello:hover {
+        background: #ccc;
+      }
+    `}</style>
   </div>
 )
