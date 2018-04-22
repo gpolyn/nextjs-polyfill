@@ -1,25 +1,10 @@
-# Example app with imported and hashed statics
+# Example app combining three recent [Next.js](https://github.com/zeit/next.js/) examples
 
-## How to use
+Just for kicks, ensure IE 10, 11 for a combination of three official [Next.js](https://github.com/zeit/next.js/) examples, as follows:
 
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-hashed-statics with-hashed-statics-app
-# or
-yarn create next-app --example with-hashed-statics with-hashed-statics-app
-```
-
-### Download manually
-
-Download the example [or clone the repo](https://github.com/zeit/next.js):
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-hashed-statics
-cd with-hashed-statics
-```
+* [with-hashed-statics](https://github.com/zeit/next.js/tree/canary/examples/with-hashed-statics)
+* [with-styled-jsx-plugins](https://github.com/zeit/next.js/tree/master/examples/with-styled-jsx-plugins)
+* [with-polyfills](https://github.com/zeit/next.js/tree/canary/examples/with-polyfills)
 
 Install it and run:
 
@@ -31,14 +16,9 @@ yarn
 yarn dev
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
+Docker:
 
 ```bash
-now
+docker build -t somename:v1 .
+docker run --rm -p 3000:3000 somename:v1
 ```
-
-## The idea behind the example
-
-This example shows how to import images, videos, etc. from `/static` and get the URL with a hash query allowing to use better cache without problems.
-
-This example supports `.svg`, `.png` and `.txt` extensions, but it can be configured to support any possible extension changing the `extensions` array in the `.babelrc` file.
